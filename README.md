@@ -165,7 +165,7 @@ echo "it is a test" > file
 echo `date`
 ```
 
-## 6.sh printf命令
+## 6.sh printf命令
 ```
 #! /bin/bash
 # printf命令:printf命令是模仿c程序库中的printf命令，printf移植性比echo好。printf可以制定字符串宽度和左右对齐方式等。printf不会像echo自动添加换行符，我们可以手动添加\n.语法：printf format-string [arguments]
@@ -342,7 +342,7 @@ echo "i am 11.sh"
 ```
 
 ## common_bash.sh
-一个小练习，通过学习后，自己可以拿来练习一下。主要是实现nginx启动、停止和重启。命令：
+一个小练习，通过学习后，自己可以拿来练习一下。主要是实现nginx启动、停止和重启。命令：
 + /bin/bash common_bash nginx start
 + /bin/bash common_bash nginx stop
 + /bin/bash common_bash nginx reload

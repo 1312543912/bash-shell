@@ -165,7 +165,7 @@ echo "it is a test" > file
 echo `date`
 ```
 
-## 6.sh  printf命令
+## 6.sh printf命令
 ```
 #! /bin/bash
 # printf命令:printf命令是模仿c程序库中的printf命令，printf移植性比echo好。printf可以制定字符串宽度和左右对齐方式等。printf不会像echo自动添加换行符，我们可以手动添加\n.语法：printf format-string [arguments]
@@ -176,7 +176,7 @@ printf "%-10s %-8s %-4.2f\n" xuxiuquan nan 70
 printf "%-10s %-8s %-4.2f\n" xuxiuquan nanisxuxiuquanitisverygood 70
 ```
 
-## 7.sh  test命令
+## 7.sh test命令
 ```
 #! /bin/bash
 # test:shell test命令用于检查某个条件是否成立，可进行数值、字符串和文件三方面测试,shell可以写linux的命令
@@ -210,7 +210,7 @@ fi
 
 ```
 
-## 8.sh  流程控制
+## 8.sh 流程控制
 ```
 #! /bin/bash
 # 流程控制：if else
@@ -273,7 +273,7 @@ done
 
 ```
 
-## 9.sh  shell函数
+## 9.sh shell函数
 ```
 #! /bin/bash
 # shell函数 定义：functionname() {}  先声明后调用
@@ -304,7 +304,7 @@ funcWithParam 1 2
 
 ```
 
-## 10.sh  重定向
+## 10.sh 重定向
 ```
 #! /bin/bash
 # shell输入输出重定向
@@ -332,7 +332,7 @@ wc -l users < user
 如果希望屏蔽 stdout 和 stderr，可以这样写：command > /dev/null 2>&1
 ```
 
-## 11.sh  文件包含
+## 11.sh 文件包含
 ```
 #! /bin/bash
 # shell文件包含 命令格式：. filename或者source filename 和其他语言一样，shell可以包含外部脚本，这样可以很方便封装一些公用的代码作为独立的文件
@@ -340,6 +340,12 @@ wc -l users < user
 source test1.sh
 echo "i am 11.sh"
 ```
+
+## common_bash.sh
+一个小练习，通过学习后，自己可以拿来练习一下。主要是实现nginx启动、停止和重启。命令：
++ /bin/bash common_bash nginx start
++ /bin/bash common_bash nginx stop
++ /bin/bash common_bash nginx reload
 
 # 使用方式
 + git clone https://github.com/1312543912/bash-shell.git
